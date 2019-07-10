@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "OldBooks";
+}
+
+
+<table>
+    <tr>
+        <td><h3>Titles of books which older than 20 years:</h3></td>
+    </tr>
+    @{
+        foreach (var title in ViewData["titles"] as List<string>)
+        {
+            <tr>
+                <td>@title</td>
+            </tr>
+        }
+    }
+</table>
+
